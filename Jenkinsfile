@@ -2,12 +2,12 @@ pipeline {
     agent any  // Use any available agent
 
     tools {
-        maven 'maven-jenkins'  // Ensure this matches the name configured in Jenkins
+        maven 'SimpleMavenApp'  // Ensure this matches the name configured in Jenkins
     }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/saigagan-coder/maven-jenkins.git'
+                git branch: 'main', url: 'https://github.com/saigagan-coder/maven-jenkins.git'
             }
         }
 
